@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تريندات فاخرة | TrendZ Luxury</title>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --ذهبى: #D4AF37;
+            --فحمى: #2C2C2C;
+            --كريمى: #F5F5F5;
+            --ظل: 0 12px 40px rgba(0,0,0,0.08);
+        }
+
+        body {
+            margin: 0;
+            font-family: 'El Messiri', sans-serif;
+            background: var(--كريمى);
+            color: var(--فحمى);
+        }
+
+        /* هيدر فاخر */
+        .header {
+            background: var(--فحمى);
+            padding: 1.5rem;
+            box-shadow: var(--ظل);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            color: var(--ذهبى);
+            font-size: 2.2rem;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        /* بانر رئيسي */
+        .hero-section {
+            height: 600px;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('images/trend1.jpg') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            margin-bottom: 4rem;
+        }
+
+        .hero-text {
+            max-width: 800px;
+            padding: 2rem;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--ذهبى);
+        }
+
+        /* بطاقات المنتجات الفاخرة */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 3rem;
+            padding: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: var(--ظل);
+            position: relative;
+        }
+
+        .product-card:hover {
+            transform: translateY(-15px);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-bottom: 4px solid var(--ذهبى);
+        }
+
+        .product-info {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .product-title {
+            font-size: 1.5rem;
+            color: var(--فحمى);
+            margin: 1rem 0;
+            line-height: 1.4;
+        }
+
+        .product-price {
+            font-size: 1.8rem;
+            color: var(--ذهبى);
+            font-weight: 700;
+            margin: 1.5rem 0;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            background: var(--فحمى);
+            color: var(--ذهبى) !important;
+            padding: 1.2rem 3rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+            border: 2px solid var(--ذهبى);
+        }
+
+        .cta-button:hover {
+            background: var(--ذهبى);
+            color: var(--فحمى) !important;
+        }
+
+        /* تذييل الصفحة */
+        footer {
+            background: var(--فحمى);
+            color: var(--كريمى);
+            padding: 4rem 2rem;
+            margin-top: 6rem;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            .products-grid {
+                grid-template-columns: 1fr;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <span>👑</span>
+            TrendZ Luxury
+        </a>
+    </header>
+
+    <!-- بانر رئيسي -->
+    <section class="hero-section">
+        <div class="hero-text">
+            <h1 class="hero-title">أناقة تتخطى الزمن</h1>
+            <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto;">
+                اكتشف تشكيلتنا الحصرية من الترينجات المصنوعة بأفضل خامات الغطس
+            </p>
+        </div>
+    </section>
+
+    <!-- المنتجات -->
+    <div class="products-grid">
+        <!-- المنتج 1 -->
+        <div class="product-card">
+            <img src="images/trend1.jpg" class="product-image" alt="ترينج فاخر">
+            <div class="product-info">
+                <h2 class="product-title">ترينج فاخر بتصميم إيطالي</h2>
+                <p class="product-price">700 ج.م</p>
+                <a href="https://wa.me/+201000889309" 
+                   class="cta-button" 
+                   target="_blank">
+                    📞 اطلب الآن
+                </a>
+            </div>
+        </div>
+
+        <!-- المنتج 2 -->
+        <div class="product-card">
+            <img src="images/trend2.jpg" class="product-image" alt="ترينج كلاسيك">
+            <div class="product-info">
+                <h2 class="product-title">ترينج كلاسيك بتفاصيل ذهبية</h2>
+                <p class="product-price">700 ج.م</p>
+                <a href="https://wa.me/+201000889309" 
+                   class="cta-button" 
+                   target="_blank">
+                    📞 اطلب الآن
+                </a>
+            </div>
+        </div>
+
+        <!-- المنتج 3 -->
+        <div class="product-card">
+            <img src="images/trend3.jpg" class="product-image" alt="ترينج عصري">
+            <div class="product-info">
+                <h2 class="product-title">ترينج عصري بتقنية النانو</h2>
+                <p class="product-price">700 ج.م</p>
+                <a href="https://wa.me/+201000889309" 
+                   class="cta-button" 
+                   target="_blank">
+                    📞 اطلب الآن
+                </a>
+            </div>
+        </div>
+
+        <!-- المنتج 4 -->
+        <div class="product-card">
+            <img src="images/trend4.jpg" class="product-image" alt="ترينج رياضي">
+            <div class="product-info">
+                <h2 class="product-title">ترينج رياضي عالي التهوية</h2>
+                <p class="product-price">700 ج.م</p>
+                <a href="https://wa.me/+201000889309" 
+                   class="cta-button" 
+                   target="_blank">
+                    📞 اطلب الآن
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 TrendZ Luxury. جميع الحقوق محفوظة</p>
+        <p style="margin-top: 1rem;">📞 للطلبات: 01000889309 | 📍 القاهرة، مصر</p>
+    </footer>
+</body>
+</html>
